@@ -27,15 +27,15 @@
     state: present
     
 # Get archiving tools to handle more archive types
-- name: Get PSCX msi
-  win_get_url:
-    url: '{{ pcsx_url }}'
-    dest: '{{ pcsx_path }}'
-- name: Install PCSX
-  win_msi:
-    path: '{{ pcsx_path }}'
-    wait: True
-- name: Clean up PCSX msi
-  win_file:
-    path: '{{ pcsx_path }}'
-    state: absent
+#- name: Get PSCX msi
+#  win_get_url:
+#    url: '{{ pcsx_url }}'
+#    dest: '{{ pcsx_path }}'
+#- name: Install PCSX
+#  win_msi:
+#    path: '{{ pcsx_path }}'
+#    wait: True
+#- name: Clean up PCSX msi
+#  win_file:
+#    path: '{{ pcsx_path }}'
+#    state: absent
